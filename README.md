@@ -1,2 +1,17 @@
-# Plagarismchecker_for2txtfiles
-This is a simple Python tool that checks how similar two text files are. Reads two text files (1.txt and 2.txt). Compares the content of the files. Shows how similar they are in an easy-to-understand percentage. Tells you if the content is likely copied, somewhat similar, or different. . 
+This is a simple Python script that compares two text files to detect similarity and determine the likelihood of plagiarism. It uses the SequenceMatcher class from Python's difflib module to calculate a similarity ratio and classify the result into different categories.
+
+Features
+File Comparison: Compares the content of two text files (1.txt and 2.txt).
+Similarity Detection: Calculates a similarity percentage using the SequenceMatcher algorithm.
+Plagiarism Analysis: Categorizes the similarity level into three levels:
+High probability of plagiarism: Similarity >= 90%.
+Moderate similarity: Similarity between 70% and 89%.
+Low similarity: Similarity < 70%.
+Error Handling: Detects if the files are missing and provides appropriate error messages.
+Tech Stack
+Language: Python
+Module: difflib
+Requirements
+Python 3.x
+Text files to compare (1.txt and 2.txt).
+
